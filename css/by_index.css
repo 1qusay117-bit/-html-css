@@ -52,7 +52,6 @@ body {
 }   
 .link ul {
     list-style: none;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,11 +63,8 @@ body {
 .link a {
     text-decoration: none;
     color: azure;
-
     padding: 8px 15px;
-
     border-radius: 20px;
-
     transition: 0.3s;
 }
 .link a:hover {
@@ -79,7 +75,7 @@ body {
     width: 90%;
     max-width: 600px;
     height: 300px;
-
+    
     margin: 30px auto;
 
     overflow: hidden;
