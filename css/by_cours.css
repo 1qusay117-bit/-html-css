@@ -1,0 +1,303 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+
+    background-color: rgb(21, 223, 206);
+
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    animation: pageEntrance 0.8s ease-out forwards;
+}
+
+
+
+@keyframes pageEntrance {
+
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.modal-content {
+
+    width: 90%;
+    max-width: 400px;
+
+    margin: 20px auto;
+
+    background-color: bisque;
+
+    padding: 20px;
+
+    border-radius: 20px;
+}
+.modal-right { /* يتحكم بالحركة حق mode;*/
+    position: fixed;
+    right: 20px;
+    top: 20%;
+    transform: translateY(-50%);
+    margin: 0;
+    width: 500px;
+}
+
+.head {
+
+    width: 90%;
+    max-width: 500px;
+
+    margin: 30px auto;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    background-color: beige;
+}
+
+
+.head a {
+
+    text-decoration: none;
+
+    color: black;
+
+}
+
+
+.head a:hover {
+
+    background-color: beige;
+
+    border-radius: 10px;
+
+}
+
+
+.head h1 {
+
+    text-align: center;
+
+    color: rgba(5, 5, 117, 0.591);
+
+}
+
+
+.head h3 {
+
+    text-align: left;
+
+    line-height: 1.5;
+
+}
+
+
+.content {
+
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 30px auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+
+    align-items: start;
+
+}
+
+
+.html {
+
+    width: 100%;
+
+    background-color: yellow;
+
+    padding: 20px;
+
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+}
+
+
+.html button {
+
+    border-radius: 20px;
+
+    padding: 8px 15px;
+
+    border: none;
+
+    cursor: pointer;
+
+}
+
+
+.html button:hover {
+
+    background-color: rgb(116, 99, 99);
+
+}
+
+
+
+.css {
+
+    width: 100%;
+
+    background-color: yellow;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+}
+
+
+.css button {
+
+    border-radius: 20px;
+
+    padding: 8px 15px;
+
+    border: none;
+
+    cursor: pointer;
+
+}
+
+
+.css button:hover {
+
+    background-color: rgb(116, 99, 99);
+
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .content {
+
+        width: 92%;
+
+        gap: 20px;
+
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    body {
+
+        width: 100%;
+
+    }
+
+
+    .modal-content {
+
+        width: 94%;
+
+        padding: 15px;
+
+    }
+
+
+    .head {
+
+        width: 94%;
+
+        margin: 20px auto;
+
+        padding: 15px;
+
+        border-radius: 15px;
+
+    }
+
+
+    .head h1 {
+
+        font-size: 25px;
+
+    }
+
+
+    .head h3 {
+
+        font-size: 16px;
+
+    }
+
+
+
+    .content {
+
+        width: 94%;
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+    }
+
+
+    .html,
+    .css {
+
+        width: 100%;
+
+        padding: 15px;
+
+        border-radius: 15px;
+        
+
+    }
+
+
+    .html h2,
+    .css h2 {
+
+        font-size: 21px;
+
+    }
+
+
+    .html h3,
+    .css h3 {
+
+        font-size: 16px;
+
+        line-height: 1.5;
+
+    }
+
+}

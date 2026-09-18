@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+
+    background-color: rgb(21, 223, 206);
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+
+    animation: pageEntrance 0.8s ease-out forwards;
+}
+
+
+/* =========================
+   Animation
+========================= */
+
+@keyframes pageEntrance {
+
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================
+   Header
+========================= */
+
+.heder {
+    width: 90%;
+    max-width: 800px;
+
+    margin: 50px auto;
+
+    text-align: center;
+}
+
+
+/* العنوان */
+
+.heder h1 {
+    background-color: rgba(101, 69, 69, 0.384);
+
+    width: 100%;
+    max-width: 400px;
+
+    margin: 0 auto 20px;
+
+    padding: 20px 20px 40px;
+
+    text-align: center;
+
+    border-radius: 30px;
+}
+
+
+/* الرابط */
+
+.heder a {
+    display: block;
+
+    width: 200px;
+
+    margin: 0 auto;
+
+    padding: 10px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    color: antiquewhite;
+
+    background-color: rgba(101, 69, 69, 0.384);
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+
+.heder a:hover {
+    background-color: rgb(58, 50, 40);
+
+    border-radius: 20px;
+}
+
+
+/* =========================
+   End
+========================= */
+
+.end {
+    width: 90%;
+    max-width: 700px;
+
+    margin: 40px auto;
+}
+
+
+.end h1 {
+    background-color: rgb(127, 255, 148);
+
+    width: 100%;
+    max-width: 500px;
+
+    margin: 0 auto;
+
+    padding: 30px;
+
+    border-radius: 30px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   Thinks
+========================= */
+
+.thinks {
+    width: 90%;
+    max-width: 700px;
+
+    margin: 40px auto;
+}
+
+
+.thinks h1 {
+    background-color: rgb(127, 255, 148);
+
+    width: 100%;
+    max-width: 500px;
+
+    margin: 0 auto;
+
+    padding: 30px;
+
+    border-radius: 30px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media screen and (max-width: 600px) {
+
+    .heder {
+        width: 94%;
+
+        margin-top: 25px;
+    }
+
+
+    .heder h1 {
+        width: 100%;
+
+        padding: 20px;
+
+        font-size: 25px;
+    }
+
+
+    .heder a {
+        width: 80%;
+
+        max-width: 250px;
+    }
+
+
+    .end,
+    .thinks {
+        width: 94%;
+
+        margin: 25px auto;
+    }
+
+
+    .end h1,
+    .thinks h1 {
+        width: 100%;
+
+        padding: 20px;
+
+        font-size: 22px;
+    }
+
+}
+
+
+/* =========================
+   Tablet
+========================= */
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+
+    .heder {
+        width: 90%;
+    }
+
+
+    .end,
+    .thinks {
+        width: 90%;
+    }
+
+}
